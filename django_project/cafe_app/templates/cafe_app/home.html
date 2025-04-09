@@ -1,0 +1,25 @@
+{% extends 'cafe_app/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Our Pratik's Cafe!</h1>
+    <p class="lead">Enjoy the best coffee in town.</p>
+    <hr class="my-4">
+    <p>Check out our menu and contact us for more information.</p>
+    <a class="btn btn-primary btn-lg" href="/menu" role="button">View Menu</a>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="/media/140599214_3440171032778963_3589954037539976515_o.jpg" class="img-fluid rounded" alt="Delicious Food">
+    </div>
+    <div class="col-md-4">
+        <img src="/media/fast-food.jpg" class="img-fluid rounded" alt="Fast Food">
+    </div>
+    <div class="col-md-4">
+        <img src="/media/pizza-with-vegetables-on-a-wooden-table-316-small.jpg" class="img-fluid rounded" alt="Pizza">
+    </div>
+</div>
+{% endblock %}
