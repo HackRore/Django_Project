@@ -17,5 +17,16 @@ Access the application in your web browser at `http://localhost:8000/`.
 - Menu display
 - Order management
 
+## Screenshots
+
+Here are some screenshots of the application:
+
+![Screenshot 1](media/Screenshot%202025-04-09%20101912.png)
+![Screenshot 2](media/Screenshot%202025-04-09%20101959.png)
+![Screenshot 3](media/Screenshot%202025-04-09%20102205.png)
+![Screenshot 4](media/Screenshot%202025-04-09%20102247.png)
+![Screenshot 5](media/Screenshot%202025-04-09%20102441.png)
+![Screenshot 6](media/Screenshot%202025-04-09%20102859.png)
+
 ## License
 This project is licensed under the MIT License.
