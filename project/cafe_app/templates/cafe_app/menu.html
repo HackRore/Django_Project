@@ -1,0 +1,27 @@
+{% extends 'cafe_app/base.html' %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Our Menu</h1>
+    <p class="lead text-center">Explore our delicious offerings, crafted with love and the finest ingredients. From freshly brewed coffee to delightful pastries, there's something for everyone at Pratik's Cafe.</p>
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                {% if product.image %}
+                <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <p class="card-text">Price: ${{ product.price }}</p>
+                    <a href="/order/{{ product.id }}" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
